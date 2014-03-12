@@ -1,0 +1,20 @@
+{"phones": [
+	{
+		"id": 1,
+		"name": "iPhone",
+		"snippet": "The iPhone is a line of smartphones designed and marketed by Apple Inc. It runs Apple's iOS mobile operating system. The first generation iPhone was released on June 29, 2007",
+		"price": "1999"
+	},
+	{
+		"id": 2,
+		"name": "Blackberry",
+		"snippet": "The BlackBerry is a line of wireless handheld devices and services designed and marketed by BlackBerry Limited, formerly known as Research In Motion Limited.",
+		"price": "2499"
+	},
+	{
+		"id": 3,
+		"name": "Android",
+		"snippet": "Android is a Linux-based operating system designed primarily for touchscreen mobile devices such as smartphones and tablet computers. Initially developed by Android, Inc.",
+		"price": "2999"
+	}
+]}

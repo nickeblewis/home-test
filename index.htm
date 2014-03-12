@@ -1,0 +1,79 @@
+<!doctype html>
+<html ng-app="epos">
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.js"></script>
+		<script src="http://code.angularjs.org/1.2.14/angular-route.js"></script>
+		<script src="js/code.js"></script>
+
+		<style type="text/css">
+			body {
+				padding-top: 60px;
+				padding-bottom: 40px;
+			}
+	    </style>
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap-responsive.min.css" />
+	</head>
+
+	<body>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="brand" href="#">Home test</a>
+					<div class="nav-collapse collapse">
+						<ul class="nav">
+							<li><a href="#home">Home</a></li>
+							<li><a href="#basket">View Basket</a></li>
+						</ul>
+					</div><!--/.nav-collapse -->
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="span4">
+					<h1>TODO</h1>
+					<p>
+						Please update this project with the features mentioned below. THis test should take around 90 mins
+						max to complete.
+					</p>
+
+					<p>
+						When completed please upload your solution to <a href="www.github.com" title="Git Hub">Git Hub</a>
+						and provide the URL to your branch
+					</p>
+					
+					<dl>
+						<dt>Create a basket</dt>
+						<dd>I should be able to add/remove products from a shopping basket</dd>
+						<dd>Update HTML to show the price</dd>
+						<dd><b>Extra Task:</b> can I add multiple quantities?</dd>
+						<dd><b>Extra Task:</b> some form of user feedback saying its been added?</dd>
+
+						<dt>Create a basket view page</dt>
+						<dd>Should show me the contents of my basket</dd>
+						<dd>Should be accessible by [url]#/basket</dd>
+						<dd>have a total cost in pounds and pence</dd>
+						<dd><b>If quantities,</b> I should be able to update how many I have</dd>
+						<dd><b>If quantities,</b> form validation</dd>
+
+						<dt>Phone page</dt>
+						<dd>Create a seperate page to show the "snippet" property of each (?) phone</dd>
+
+						<dt>Misc. tasks</dt>
+						<dd>This page is using twitter bootstrap v2.3.2 add the active class to the relevant links depending on page
+					</dl>
+				</div>
+			
+
+				<ng-view></ng-view>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,9 +1,11 @@
 <div class="span8">
+	<div class="alert" ng-show="notification != ''">{{notification}}</div>
 	<h1>Products</h1>
 	<form>
 		<div class="span2" ng-repeat="phone in phones">
-			<h2>{{ phone.name }}</h2>
-			<button>Add to basket</button>
+			<h2>{{ phone.name }} &pound;{{phone.price}}</h2>
+			<button ng-click="addToBasket($index)">Add to basket</button>
+			<a ng-href="#/view/{{$index}}">View</a>
 		</div>
 	</form>
 </div>

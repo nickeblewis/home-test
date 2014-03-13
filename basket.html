@@ -4,8 +4,7 @@
 	<form>
 		<div class="span2" ng-repeat="phone in phones">
 			<h2>{{ phone.name }} &pound;{{phone.price}}</h2>
-			<input type="text" ng-model="phone.qty" class="input-small">
-			<button ng-click="updateQty($index)">Update</button>
+			<button ng-click="removeItem($index)">Remove</button>
 		</div>
 	</form>
 </div>

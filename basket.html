@@ -1,0 +1,14 @@
+<div class="span8">
+	<div class="alert" ng-show="notification != ''">{{notification}}</div>
+	<h1>Basket</h1>
+	<form>
+		<div class="span2" ng-repeat="phone in phones">
+			<h2>{{ phone.name }} &pound;{{phone.price}}</h2>
+			<input type="text" ng-model="phone.qty" class="input-small">
+			<button ng-click="updateQty($index)">Update</button>
+		</div>
+	</form>
+</div>
+<div class="span8">
+	<h2>Grand Total : &pound;{{total}}</h2>
+</div>
